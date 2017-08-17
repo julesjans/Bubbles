@@ -54,7 +54,7 @@ class BubbleController: UIViewController, UICollisionBehaviorDelegate, BubbleCon
                 let y = CGFloat(grav.y);
                 let v = CGVector(dx: -x, dy: -(0 - y));
                 self.gravity.gravityDirection = v;
-                self.currentRotation = CGFloat(atan2(motion!.gravity.x, motion!.gravity.y) - M_PI)
+                self.currentRotation = CGFloat(atan2(motion!.gravity.x, motion!.gravity.y) - .pi)
             }
         )
     }
