@@ -149,7 +149,7 @@ class BubbleController: UIViewController, UICollisionBehaviorDelegate, BubbleCon
         perform(#selector(BubbleController.clearBubble(_:)), with: bubble, afterDelay: BubbleSettings.longevity)
     }
     
-    func clearBubble(_ bubble: Bubble) {
+    @objc func clearBubble(_ bubble: Bubble) {
         bubble.playSound(BubbleSounds.pop)
         UIView.animate(withDuration: 0.75, animations: { () -> Void in
             bubble.alpha = 0.0
@@ -165,12 +165,12 @@ class BubbleController: UIViewController, UICollisionBehaviorDelegate, BubbleCon
         }) 
     }
     
-    func clearBubbles() {
+    @objc func clearBubbles() {
         for bubble in self.bubbles { clearBubble(bubble) }
         self.bubbles = []
     }
     
-    func clearLights() {
+    @objc func clearLights() {
         bubbleLights.resetLights()
     }
     

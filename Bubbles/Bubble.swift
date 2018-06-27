@@ -71,13 +71,13 @@ class Bubble: UIView {
             paraStyle.alignment = NSTextAlignment.center
             
             let attributes: Dictionary = [
-                NSForegroundColorAttributeName: fieldColor,
-                NSFontAttributeName: fieldFont,
-                NSParagraphStyleAttributeName: paraStyle
+                NSAttributedStringKey.foregroundColor: fieldColor,
+                NSAttributedStringKey.font: fieldFont,
+                NSAttributedStringKey.paragraphStyle: paraStyle
             ]
             
             // let height = self.bubbleCharacter?.boundingRectWithSize(self.bounds.size, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil).height
-            let height = self.bubbleCharacter?.size(attributes: attributes).height
+            let height = self.bubbleCharacter?.size(withAttributes: attributes).height
             let yOffset = ((self.bounds.height - height!) / 2.0)
             var textFrame = self.bounds
             textFrame.origin.y = yOffset
@@ -106,7 +106,7 @@ class Bubble: UIView {
         })
     }
     
-    func moveBubble() {
+    @objc func moveBubble() {
         self.bubbleDelegate?.moveBubble(self, pan: self.panGesture)
     }
 }
