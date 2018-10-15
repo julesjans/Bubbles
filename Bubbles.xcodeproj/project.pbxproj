@@ -11,7 +11,6 @@
 		8450067A1B9F1D0800633543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845006791B9F1D0800633543 /* AppDelegate.swift */; };
 		8450067C1B9F1D0800633543 /* BubbleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450067B1B9F1D0800633543 /* BubbleController.swift */; };
 		8450067F1B9F1D0800633543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450067D1B9F1D0800633543 /* Main.storyboard */; };
-		845006811B9F1D0800633543 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845006801B9F1D0800633543 /* Images.xcassets */; };
 		845006841B9F1D0900633543 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845006821B9F1D0800633543 /* LaunchScreen.xib */; };
 		8450069A1B9F22D500633543 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845006991B9F22D500633543 /* Bubble.swift */; };
 		847D37D41BA4CCC800AA1621 /* Pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 847D37D31BA4CCC800AA1621 /* Pop.wav */; };
@@ -19,6 +18,7 @@
 		84A06C8E1BA433BA00FCB746 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84A06C8D1BA433BA00FCB746 /* Settings.bundle */; };
 		84A06C901BA43A5100FCB746 /* BubbleSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A06C8F1BA43A5100FCB746 /* BubbleSettings.swift */; };
 		84C158931C0FB3AA004FEF14 /* BubbleLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C158921C0FB3AA004FEF14 /* BubbleLights.swift */; };
+		84E10B10214EDCED00A598D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E10B0F214EDCED00A598D0 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		845006791B9F1D0800633543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8450067B1B9F1D0800633543 /* BubbleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleController.swift; sourceTree = "<group>"; };
 		8450067E1B9F1D0800633543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		845006801B9F1D0800633543 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		845006831B9F1D0800633543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		845006991B9F22D500633543 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 		847D37D31BA4CCC800AA1621 /* Pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pop.wav; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		84A06C8D1BA433BA00FCB746 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		84A06C8F1BA43A5100FCB746 /* BubbleSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleSettings.swift; sourceTree = "<group>"; };
 		84C158921C0FB3AA004FEF14 /* BubbleLights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleLights.swift; sourceTree = "<group>"; };
+		84E10B0F214EDCED00A598D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Bubbles/Images.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		84CF2DDD1BA1583A00711DE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84E10B0F214EDCED00A598D0 /* Images.xcassets */,
 				8450067D1B9F1D0800633543 /* Main.storyboard */,
-				845006801B9F1D0800633543 /* Images.xcassets */,
 				845006821B9F1D0800633543 /* LaunchScreen.xib */,
 			);
 			name = Views;
@@ -183,9 +183,9 @@
 				847D37D41BA4CCC800AA1621 /* Pop.wav in Resources */,
 				8450067F1B9F1D0800633543 /* Main.storyboard in Resources */,
 				845006841B9F1D0900633543 /* LaunchScreen.xib in Resources */,
+				84E10B10214EDCED00A598D0 /* Images.xcassets in Resources */,
 				84A06C8E1BA433BA00FCB746 /* Settings.bundle in Resources */,
 				840493421BA0F1FD0028AD31 /* Bubble.wav in Resources */,
-				845006811B9F1D0800633543 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
